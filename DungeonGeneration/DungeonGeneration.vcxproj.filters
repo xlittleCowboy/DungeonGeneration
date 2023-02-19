@@ -27,6 +27,9 @@
     <ClCompile Include="Randomizer.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="MathHelper.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Leaf.h">
@@ -36,6 +39,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Randomizer.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="MathHelper.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

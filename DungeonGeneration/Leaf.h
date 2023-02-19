@@ -5,22 +5,36 @@
 class Leaf
 {
 private:
-	sf::Vector2f Position;
-	sf::Vector2f Size;
-	
-public:
-	Leaf(sf::Vector2f Position, sf::Vector2f Size);
+	Leaf* FirstLeaf;
+	Leaf* SecondLeaf;
 
-	Leaf* First;
-	Leaf* Second;
+	Leaf* RoomLeaf;
+	Leaf* CorridorLeaf;
 
 	int Level = 0;
 
-	sf::Color Color;
+	sf::RectangleShape LeafShape;
+	
+public:
+	Leaf(sf::Vector2f Position, sf::Vector2f Size,
+		sf::Color FillColor = sf::Color::Transparent, sf::Color OutlineColor = sf::Color::White,
+		float OutlineThickness = 5.0f);
 
-	std::vector<Leaf*> ConnectedRooms;
+	Leaf* GetFirstLeaf() { return FirstLeaf; }
+	Leaf* GetSecondLeaf() { return SecondLeaf; }
 
-	sf::Vector2f GetPosition();
-	sf::Vector2f GetSize();
+	void SetFirstLeaf(Leaf* Leaf);
+	void SetSecondLeaf(Leaf* Leaf);
+
+	Leaf* GetRoomLeaf() { return RoomLeaf; }
+	void SetRoomLeaf(Leaf* Leaf);
+
+	Leaf* GetCorridorLeaf() { return CorridorLeaf; }
+	void SetCorridorLeaf(Leaf* Leaf);
+
+	int GetLevel() { return Level; }
+	void IncreaseLevel(int Value = 1);
+
+	sf::RectangleShape& GetLeafShape() { return LeafShape; }
 };
 

@@ -1,27 +1,16 @@
 #pragma once
 
 #include <iostream>
-
 #include "Leaf.h"
 #include "Randomizer.h"
-
-struct Vertex
-{
-	sf::Vector2f Location;
-
-	Vertex* First;
-	Vertex* Second;
-};
+#include "MathHelper.h"
 
 class DungeonGenerator
 {
 private:
+	Leaf* MainRoot;
+
 	Randomizer Rnd;
-
-	std::vector<Leaf*> Rooms;
-	std::vector<Leaf*> Corridors;
-
-	std::vector<Vertex*> Verteces;
 
 	float LineWidth = 3.0f;
 
@@ -32,34 +21,34 @@ private:
 	float MaxRoomPos = 0.2f;
 
 	float MinRoomSize = 0.5f;
-	float MaxRoomSize = 0.8f;
+	float MaxRoomSize = 0.9f;
 
-	float MinCorridorWidth = 5.0f;
-	float MaxCorridorWidth = 5.0f;
+	float CorridorWidth = 5.0f;
 
 	float DivideRatio = 1.0f;
+
+	void GenerateLeafs(int IterationsCount, int Width, int Height, Leaf* Root);
+	void GenerateRooms(Leaf* Root, bool RandomizeRoomColor, sf::Color RoomColor);
+	void GenerateCorridors(Leaf* Root, sf::Color CorridorColor);
+	void GenerateVerticalLeafs(int IterationsCount, int Width, int Height, Leaf* LastLeaf);
+	void GenerateHorizontalLeafs(int IterationsCount, int Width, int Height, Leaf* LastLeaf);
+
+	void MoveOnNextLevel(Leaf* Root, int IterationsCount, int Width, int Height);
+
+	void ClearDungeon(Leaf* Root);
 
 public:
 	~DungeonGenerator();
 
-	Leaf* MainRoot;
-
-	void GenerateDungeon(const int IterationsCount, const int Width, const int Height);
-
-	void GenerateLeafs(const int IterationsCount, const int Width, const int Height, Leaf* Root);
-	void GenerateRooms(Leaf* Root);
-
-	void GenerateCorridors(Leaf* Root);
-
-	void GenerateVerticalLeafs(const int IterationsCount, const int Width, const int Height, Leaf* LastLeaf);
-	void GenerateHorizontalLeafs(const int IterationsCount, const int Width, const int Height, Leaf* LastLeaf);
+	void GenerateDungeon(int IterationsCount, int Width, int Height,
+		sf::Color CorridorColor = sf::Color::White, bool RandomizeRoomColor = true, sf::Color RoomColor = sf::Color::White);
 
 	void DrawLeafs(sf::RenderWindow& Window, Leaf* Root);
-	void DrawRooms(sf::RenderWindow& Window);
-	void DrawCorridors(sf::RenderWindow& Window);
-	void DrawPoints(sf::RenderWindow& Window);
+	void DrawRooms(sf::RenderWindow& Window, Leaf* Root);
+	void DrawCorridors(sf::RenderWindow& Window, Leaf* Root);
 
-	Vertex* FindNearestVertex(Vertex* Main, Vertex* Except);
-	void FindNearestVertices();
-	void AddVertex(sf::Vector2f Location);
+	void RebuildDungeon(int IterationsCount, int Width, int Height,
+		sf::Color CorridorColor = sf::Color::White, bool RandomizeRoomColor = true, sf::Color RoomColor = sf::Color::White);
+
+	Leaf* GetMainRoot();
 };

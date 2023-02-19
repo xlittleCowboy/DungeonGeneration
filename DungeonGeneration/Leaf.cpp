@@ -1,17 +1,52 @@
 #include "Leaf.h"
 
-Leaf::Leaf(sf::Vector2f Position, sf::Vector2f Size)
+Leaf::Leaf(sf::Vector2f Position, sf::Vector2f Size,
+	sf::Color FillColor, sf::Color OutlineColor, float OutlineThickness)
 {
-	this->Position = Position;
-	this->Size = Size;
+	LeafShape.setPosition(Position);
+	LeafShape.setSize(Size);
+	LeafShape.setFillColor(FillColor);
+	LeafShape.setOutlineColor(OutlineColor);
+	LeafShape.setOutlineThickness(OutlineThickness);
+
+	FirstLeaf = nullptr;
+	SecondLeaf = nullptr;
+
+	RoomLeaf = nullptr;
+	CorridorLeaf = nullptr;
 }
 
-sf::Vector2f Leaf::GetPosition()
+void Leaf::SetFirstLeaf(Leaf* Leaf)
 {
-	return Position;
+	if (!Leaf) return;
+
+	FirstLeaf = Leaf;
 }
 
-sf::Vector2f Leaf::GetSize()
+void Leaf::SetSecondLeaf(Leaf* Leaf)
 {
-	return Size;
+	if (!Leaf) return;
+
+	SecondLeaf = Leaf;
+}
+
+void Leaf::SetRoomLeaf(Leaf* Leaf)
+{
+	if (!Leaf) return;
+
+	RoomLeaf = Leaf;
+}
+
+void Leaf::SetCorridorLeaf(Leaf* Leaf)
+{
+	if (!Leaf) return;
+
+	CorridorLeaf = Leaf;
+}
+
+void Leaf::IncreaseLevel(int Value)
+{
+	if (Value <= 0) return;
+
+	Level += Value;
 }
