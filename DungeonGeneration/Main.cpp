@@ -8,19 +8,19 @@
 
 int main()
 {
-    // Window Settings
-    int WindowWidth = 800;
-    int WindowHeight = 800;
+    // Window Setup
+    const int WindowWidth = 800;
+    const int WindowHeight = 800;
 
-    sf::RenderWindow Window(sf::VideoMode(WindowWidth, WindowHeight), "Dungeon Generator");
+    sf::RenderWindow Window(sf::VideoMode(WindowWidth, WindowHeight), "Dungeon Generator", sf::Style::Close);
 
-    // Dungeon Settings
-    int IterationsCount = 4;
+    // Dungeon Setup
+    int IterationsCount = 4; // Bigger number - more rooms
     int DungeonWidth = 700;
     int DungeonHeight = 700;
     sf::Color CorridorColor = sf::Color(233, 0, 100);
-    bool RandomizeRoomColor = false;
     sf::Color RoomColor = sf::Color(179, 0, 94);
+    bool RandomizeRoomColor = false;
 
     DungeonGenerator* Generator = new DungeonGenerator();
     Generator->GenerateDungeon(IterationsCount, DungeonWidth, DungeonHeight,
