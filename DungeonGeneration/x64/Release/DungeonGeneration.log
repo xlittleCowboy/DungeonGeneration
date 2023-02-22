@@ -1,7 +1,153 @@
-﻿  Main.cpp
+﻿  DungeonGenerator.cpp
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(20,64): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(20,57): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(41,30): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(40,57): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(44,30): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(43,57): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(47,63): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(46,93): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(50,62): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(49,93): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(57,45): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(57,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(57,69): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(57,62): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(75,10): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(76,10): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(78,10): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(79,10): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(86,12): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(87,24): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(91,12): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(92,24): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(95,46): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(95,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(95,71): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(95,64): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(140,30): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(139,62): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(139,35): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(160,90): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(160,49): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Projects\VS\DungeonGeneration\DungeonGeneration\DungeonGenerator.cpp(160,22): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Leaf.cpp
+  Main.cpp
   Generating code
-  1 of 58 functions ( 1.7%) were compiled, the rest were copied from previous compilation.
+  8 of 58 functions (13.8%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   DungeonGeneration.vcxproj -> D:\Projects\VS\DungeonGeneration\x64\Release\DungeonGeneration.exe
